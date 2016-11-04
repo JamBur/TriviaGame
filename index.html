@@ -1,0 +1,105 @@
+<!-- Stopwatch that starts on click -->
+	<!-- Then Q's show up on the page -->
+	<!-- Only 1 answer allowed per question -->
+		<!-- then in text box: "All Done! / "Correct Answers:0" / "Incorrect Answers: 0" / "Unanswered: 0" -->
+			<!-- Then game ends with no reset  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Internal CSS links -->
+	<title>Election 2016 Quiz -- Who Said It?</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="UTF-8">
+	
+	
+	<!-- jQuery link -->
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+	
+</head>
+<body>
+	<h1>Election 2016 Quiz -- Who Said It?</h1>
+	<!-- Questions/timer div -->
+	<div class= "questionClass" id="questions">
+		<button id="startButton">Start</button>
+	</div>
+		<div class="clockClass" id="clock"> Time Remaining:
+			<div class ="clockClass" id="countDown">clock<div>
+			seconds left</div>
+			</div>
+			<div id="q1">
+				<p>1. “You know what they say about men with small hands … you can’t trust them.”</p>
+				<input type="radio" id="q1.1" name="q1.name" value ="wrong">Donald Trump
+				<input type="radio" id="q1.2" name="q1.name" value ="wrong">Hillary Clinton
+				<input type="radio" id="q1.1" name="q1.name" value ="correct">Marco Rubio
+				<input type="radio" id="q1.1" name="q1.name" value ="wrong">Ben Carson
+			</div>
+			<div id="q2">
+				<p>“2. "My own personal theory is that Joseph built the pyramids to store grain”</p>
+				<input type="radio" id="q2.1" name="q2.name" value ="wrong">Donald Trump
+				<input type="radio" id="q2.2" name="q2.name" value ="wrong">Hillary Clinton
+				<input type="radio" id="q2.1" name="q2.name" value ="wrong">Marco Rubio
+				<input type="radio" id="q2.1" name="q2.name" value ="correct">Ben Carson
+			</div>
+			<div id="q3">
+				<p>3. “He referred to my hands -- 'if they're small, something else must be small.' I guarantee you there's no problem. I guarantee.” </p>
+				<input type="radio" id="q3.1" name="q3.name" value ="correct">Donald Trump
+				<input type="radio" id="q3.2" name="q3.name" value ="wrong">Hillary Clinton
+				<input type="radio" id="q3.1" name="q3.name" value ="wrong">Marco Rubio
+				<input type="radio" id="q3.1" name="q3.name" value ="wrong">Ben Carson
+			</div>
+			<div id="q4">
+				<p>4. “Are we willing to elect someone as president who has as their role model somebody who acknowledges Lucifer?"</p>
+				<input type="radio" id="q3.1" name="q3.name" value ="wrong">Donald Trump
+				<input type="radio" id="q3.2" name="q3.name" value ="wrong">Hillary Clinton
+				<input type="radio" id="q3.1" name="q3.name" value ="wrong">Marco Rubio
+				<input type="radio" id="q3.1" name="q3.name" value ="correct">Ben Carson
+			</div>
+			<div id="q5">
+				<p>5. "How stupid are the people of Iowa?" </p>
+				<input type="radio" id="q5.1" name="q5.name" value ="correct">Donald Trump
+				<input type="radio" id="q5.2" name="q5.name" value ="wrong">Hillary Clinton
+				<input type="radio" id="q5.1" name="q5.name" value ="wrong">Marco Rubio
+				<input type="radio" id="q5.1" name="q5.name" value ="wrong">Ben Carson
+			</div>
+			<div id="q6">
+				<p>6. "I don't know who created Pokémon Go, but I want to figure out how to get them to have Pokémon Go to the polls" </p>
+				<input type="radio" id="q6.1" name="q6.name" value ="wrong">Donald Trump
+				<input type="radio" id="q6.2" name="q6.name" value ="correct">Hillary Clinton
+				<input type="radio" id="q6.1" name="q6.name" value ="wrong">Marco Rubio
+				<input type="radio" id="q6.1" name="q6.name" value ="wrong">Ben Carson
+			</div>
+			<div id="q7">
+				<p>7. "I better use some Tic Tacs just in case I start kissing her. You know, I’m automatically attracted to beautiful — I just start kissing them. It’s like a magnet. Just kiss. I don’t even wait. And when you’re a star, they let you do it. You can do anything."</p>
+				<input type="radio" id="q7.1" name="q7.name" value ="correct">Donald Trump
+				<input type="radio" id="q7.2" name="q7.name" value ="wrong">Hillary Clinton
+				<input type="radio" id="q7.1" name="q7.name" value ="wrong">Marco Rubio
+				<input type="radio" id="q7.1" name="q7.name" value ="wrong">Ben Carson
+			</div>
+			<div id="q8">
+				<p>8. "We will win."</p>
+				<input type="radio" id="q8.1" name="q8.name" value ="correct">Donald Trump
+				<input type="radio" id="q8.2" name="q8.name" value ="correct">Hillary Clinton
+				<input type="radio" id="q8.1" name="q8.name" value ="correct">Marco Rubio
+				<input type="radio" id="q8.1" name="q8.name" value ="correct">Ben Carson
+			</div>
+			<button id="finishButton">Finish</button>
+		</div>
+	
+	<button id="doneButton"></button>
+	
+	<!-- Closing div after finish -->
+	<div id="allDone">
+		<p>All Done!</p>
+		<p>Correct Answers: </p>
+		<p>Incorrect Answers: </p>
+		<p>Unanswered: </p>	
+	</div>
+	
+	<!-- Javascript link -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
