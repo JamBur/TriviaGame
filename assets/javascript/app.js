@@ -63,21 +63,21 @@ $(document).ready(function() {
 	// });
 	});
 
-	$(function() {
-    	var $radios = $('input:radio[name="q1.name"]');
-    	if($radios.is('q.1.3:checked') === true) {
-        $radios.filter('[value=correct]').prop('checked', correctAnswers++);
-    	}
-    	else if($radios.is('q.1.1:checked') === true) {
-        $radios.filter('[value=wrong]').prop('checked', incorrectAnswers++);
-    	}
-    	else if($radios.is('q.1.2:checked')  === true) {
-        $radios.filter('[value=wrong]').prop('checked', incorrectAnswers++);
-    	}
-    	else if($radios.is('q.1.4:checked')  === true) {
-        $radios.filter('[value=wrong]').prop('checked', incorrectAnswers++);
-    	}
-	});
+	// $(function() {
+ //    	var $radios = $('input:radio[name="q1.name"]');
+ //    	if($radios.is('q.1.3:checked') === true) {
+ //        $radios.filter('[value=correct]').prop('checked', correctAnswers++);
+ //    	}
+ //    	else if($radios.is('q.1.1:checked') === true) {
+ //        $radios.filter('[value=wrong]').prop('checked', incorrectAnswers++);
+ //    	}
+ //    	else if($radios.is('q.1.2:checked')  === true) {
+ //        $radios.filter('[value=wrong]').prop('checked', incorrectAnswers++);
+ //    	}
+ //    	else if($radios.is('q.1.4:checked')  === true) {
+ //        $radios.filter('[value=wrong]').prop('checked', incorrectAnswers++);
+ //    	}
+	// });
 
 
 
