@@ -10,6 +10,7 @@ $(document).ready(function() {
 	// displayClock.innerHTML = "5";
 	var setClock;
 	var button = "startButton"
+	var countDown;
 
 	// finalCountDown.parentNode.replaceChild(finalCountDown, displayClock);
 
@@ -23,27 +24,43 @@ $(document).ready(function() {
 			// $("#countDown").html(countDown);
 		// }
 
-	$("#startButton").on("click", function() {
+	// $("#startButton").on("click", function() {
+
+	$("#startButton").click(function(){
+		$("#startButton").hide();
+		$("#clock").show();
+		$("#countDown").show();
 
 		setClock = setInterval(function() {
 		    clock--;
 		    console.log(clock);
 		    $("#clock").html(clock);
-		    if(clock === 0){
-				setTimeout(function(){
-					$("#questions").hide();
-					$("#allDone").show();
-				}, 1000);
-			}
 		    if(clock > 0) {
 		    	$("#questions").show();
+		    	$("clock").show();
+		    	// $("#countDown").html(clock);
 		    	// displayClock.parentNode.replaceChild(finalCountDown, displayClock);
 		        // clearInterval(setClock);
 		    }
+		    else if(clock === 0){
+				setTimeout(function(){
+					$("#questions").hide();
+					$("#allDone").show();
+					$("#clock").hide();
+					// console.log(correctAnswers);
+			  //   	$("#correctAnswers").html(correctAnswers);
+			  //   	console.log(incorrectAnswers);
+			  //   	$("#incorrectAnswers").html(incorrectAnswers);
+			  //   	console.log(unansweredQuestions);
+			  //   	$("#unansweredQuestions").html(unansweredQuestions);
+		    }, 1000);
+
+			}
 		    // else {
 		        // clock.innerHTML = clock.toString();
 		    // }
 		}, 1000);
+	// });
 	});
 
 	$(function() {
@@ -65,16 +82,13 @@ $(document).ready(function() {
 
 
 
-	$("#questions").hide();
+	// $("#questions").hide();
 	$("#allDone").hide();
-
-	$("#startButton").click(function(){
-		$("#startButton").hide();
-		$("#doneButton").show();
-	});
 
 	$("#doneButton").click(function(){
 		$("#questions").hide();
+		$("#clock").hide();
+		$("#allDone").show();
 		// Display results?
 	});
 
