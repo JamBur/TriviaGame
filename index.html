@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Internal CSS links -->
+	<!-- Title and nternal CSS links -->
 	<title>Election 2016 Quiz -- Who Said It?</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -19,16 +19,18 @@
 
 	
 </head>
-<body>	
+<body>
 	<h1>Election 2016 Quiz -- Who Said It?</h1>
 	<!-- Questions/timer div -->
 	<div class= "questionClass" id="questions">
 		<button id="startButton">Start</button>
 	</div>
+	<!-- attempt to make a clcok with that show before the html numbers -->
 		<div class="clockClass" id="clock"> Time Remaining:
 			<div class ="clockClass" id="countDown">clock<div>
 			seconds left</div>
 			</div>
+	<!-- Questions -->
 			<div id="q1">
 				<p>1. “You know what they say about men with small hands … you can’t trust them.”</p>
 				<input type="radio" id="q1.1" name="q1.name" value ="wrong">Donald Trump
@@ -85,17 +87,21 @@
 				<input type="radio" id="q8.1" name="q8.name" value ="correct">Marco Rubio
 				<input type="radio" id="q8.1" name="q8.name" value ="correct">Ben Carson
 			</div>
+			<!-- Finish button -->
 			<button id="finishButton">Finish</button>
 		</div>
 	
-	<button id="doneButton"></button>
+	<!-- FInish button attempt that didn't show up, canceled out -->
+	<!-- <button id="doneButton"></button> -->
 	
-	<!-- Closing div after finish -->
+	<!-- Closing div after finish, didn't get far anough to add up scores, and probably would've failed ot get those to show up on the screen -->
 	<div id="allDone">
 		<p>All Done!</p>
-		<p>Correct Answers: </p>
+		<p>Correct Answers:</p> <div id = "correctAnswers">correctAnswers</div>
 		<p>Incorrect Answers: </p>
-		<p>Unanswered: </p>	
+		<div id = "incorrectAnswers">incorrectAnswers</div>
+		<p>Unanswered: </p>
+		<div id = "unansweredQuestions">unansweredQuestions</div>
 	</div>
 
 	<!-- Javascript link -->

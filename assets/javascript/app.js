@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-	// Create Vars
+	// Create Vars (note that I've inlcuded canceled
+	// text this week to try and help show thing I'm
+	// doing wrong)
+
 	var correctAnswers = 0;
 	var incorrectAnswers = 0;
 	var unansweredQuestions = 0;
@@ -11,20 +14,21 @@ $(document).ready(function() {
 	var setClock;
 	var button = "startButton"
 	var countDown;
+	var correct;
+	var wrong;
 
 	// finalCountDown.parentNode.replaceChild(finalCountDown, displayClock);
 
+	// Attempt to create a way to show anser var on screen
 	$("#correctAnswers").text(correctAnswers);
 	$("#incorrectAnswers").text(incorrectAnswers);
 	$("#unansweredQuestions").text(unansweredQuestions);
 
-	// 	set function to add clock in html
+	// 	canceled out: set function to add clock in html
 		// function write (){
 			// $("#clock").html(clock);
 			// $("#countDown").html(countDown);
 		// }
-
-	// $("#startButton").on("click", function() {
 
 	$("#startButton").click(function(){
 		$("#startButton").hide();
@@ -56,12 +60,32 @@ $(document).ready(function() {
 		    }, 1000);
 
 			}
-		    // else {
-		        // clock.innerHTML = clock.toString();
-		    // }
+
 		}, 1000);
-	// });
 	});
+
+
+	// caneled out: these were the last of the functions I tried
+	// for scoring after many google searches and reviewing previous
+	// assignments and such, but it's a hot mess
+
+
+
+	// function checkCorrect(){
+	// 	if (($radios.is('q.1.3:checked')){
+	// 		correctAnswers++;
+	// 	}
+	// }
+
+	// function write (){
+
+	// 	$("#correctAnswers").html(correctAnswers);
+	// 	$("#incorrectAnswers").html(incorrectAnswers);
+	// }	
+
+	// $("#q.1.3").on("checked", function() {
+	// 	addTotal(correctAnswers);
+	// });
 
 	// $(function() {
  //    	var $radios = $('input:radio[name="q1.name"]');
@@ -80,7 +104,10 @@ $(document).ready(function() {
 	// });
 
 
-
+	// Early on, these were helping me get stuff
+	// to appear and go away, and I still think this
+	// is what's making the all done screen appear 
+	// when the clock runs out
 
 	// $("#questions").hide();
 	$("#allDone").hide();
@@ -89,7 +116,6 @@ $(document).ready(function() {
 		$("#questions").hide();
 		$("#clock").hide();
 		$("#allDone").show();
-		// Display results?
 	});
 
 });
